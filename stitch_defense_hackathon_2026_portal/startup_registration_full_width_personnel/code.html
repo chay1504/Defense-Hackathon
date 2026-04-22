@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Startup Registration | Defense Hackathon</title>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error": "#ffffff",
+                        "primary-fixed-dim": "#92ccff",
+                        "on-tertiary-fixed-variant": "#3b4b2f",
+                        "on-secondary-fixed-variant": "#3d4b2e",
+                        "on-primary-container": "#fdfcff",
+                        "on-background": "#191c1c",
+                        "on-surface": "#191c1c",
+                        "tertiary-container": "#687a5a",
+                        "on-primary-fixed": "#001d31",
+                        "secondary-container": "#d5e6be",
+                        "surface-bright": "#f8faf9",
+                        "inverse-surface": "#2e3131",
+                        "on-error-container": "#93000a",
+                        "error": "#ba1a1a",
+                        "outline": "#707881",
+                        "surface-container-high": "#e6e9e8",
+                        "surface": "#f8faf9",
+                        "tertiary-fixed": "#d5e9c3",
+                        "tertiary-fixed-dim": "#b9cda8",
+                        "surface-container-highest": "#e1e3e2",
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#92ccff",
+                        "background": "#f8faf9",
+                        "surface-dim": "#d8dad9",
+                        "surface-container-low": "#f2f4f3",
+                        "secondary": "#546344",
+                        "on-secondary-fixed": "#131f07",
+                        "tertiary": "#506143",
+                        "on-surface-variant": "#404850",
+                        "on-secondary-container": "#596748",
+                        "error-container": "#ffdad6",
+                        "surface-tint": "#006397",
+                        "on-tertiary-fixed": "#111f08",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed-dim": "#bccca6",
+                        "on-primary-fixed-variant": "#004b73",
+                        "on-primary": "#ffffff",
+                        "surface-variant": "#e1e3e2",
+                        "primary-fixed": "#cce5ff",
+                        "secondary-fixed": "#d8e8c1",
+                        "inverse-on-surface": "#eff1f0",
+                        "on-secondary": "#ffffff",
+                        "surface-container": "#eceeed",
+                        "primary": "#006193",
+                        "outline-variant": "#c0c7d1",
+                        "on-tertiary-container": "#f9ffed",
+                        "primary-container": "#1b7ab5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Public Sans"],
+                        "body": ["Public Sans"],
+                        "label": ["Public Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .radar-grid {
+            background-image: radial-gradient(circle, #006193 1px, transparent 1px);
+            background-size: 40px 40px;
+            opacity: 0.03;
+        }
+        body { font-family: 'Public Sans', sans-serif; }
+    </style>
+</head>
+<body class="text-on-background min-h-screen flex flex-col bg-[#161A4E]">
+<!-- TopNavBar -->
+<header class="bg-[#f8faf9]/80 dark:bg-[#191c1c]/80 backdrop-blur-[20px] fixed top-0 w-full z-50 border-b border-[#c0c7d1]/15 shadow-[0_24px_40px_rgba(25,28,28,0.06)]">
+<div class="flex justify-between items-center px-10 h-20 w-full max-w-screen-2xl mx-auto">
+<div class="text-xl font-black tracking-[-0.02em] text-[#006193] dark:text-[#1b7ab5] uppercase" style="">DEFENSE HACKATHON 2K26</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-[#546344] dark:text-[#a0af90] font-medium font-['Public_Sans'] text-body-md tracking-normal hover:text-[#006193] transition-all duration-200" href="#" style="">Student Track</a>
+<a class="text-[#006193] dark:text-[#1b7ab5] font-bold border-b-2 border-[#006193] dark:border-[#1b7ab5] pb-1 font-['Public_Sans'] text-body-md tracking-normal transition-all duration-200" href="#" style="">Startup Track</a>
+</nav>
+<div class="flex items-center gap-6">
+<span class="text-[#546344] dark:text-[#a0af90] text-[0.75rem] uppercase tracking-[0.05em] font-bold cursor-pointer hover:text-[#006193]" style="">Support</span>
+</div>
+</div>
+</header>
+<main class="flex-grow pt-32 pb-20 relative overflow-hidden flex justify-center items-start px-6">
+<!-- Background Motif -->
+<div class="absolute inset-0 radar-grid pointer-events-none"></div>
+<!-- Registration Card Container -->
+<div class="relative w-full max-w-4xl bg-surface-container-lowest rounded-xl shadow-[0_24px_40px_rgba(25,28,28,0.06)] overflow-hidden">
+<!-- Header Section -->
+<div class="bg-surface-container px-12 py-12 border-b border-outline-variant/10">
+<div class="flex flex-col gap-6">
+<div class="bg-surface-container-high p-8 rounded-xl border-l-8 border-primary">
+<span class="text-2xl md:text-4xl font-black italic tracking-tighter text-primary-container block leading-tight" style="">
+            "Built for those who build what matters."
+        </span>
+</div>
+</div>
+</div>
+<!-- Form Content -->
+<div class="px-12 py-12 flex flex-col gap-12">
+<!-- Section 1: Personal Details -->
+<section class="flex flex-col gap-8">
+<div class="flex items-center gap-4">
+<span class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary font-bold text-sm" style="">01</span>
+<h2 class="text-title-lg font-bold text-on-surface" style="">Personal Information</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex flex-col gap-2">
+<label class="text-[0.6875rem] uppercase tracking-[0.05em] font-bold text-secondary" style="">Full Name</label>
+<input class="bg-surface-container-high border-none border-b-2 border-outline-variant px-4 py-3 text-on-surface focus:ring-0 focus:border-primary transition-colors" placeholder="Johnathan Doe" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-[0.6875rem] uppercase tracking-[0.05em] font-bold text-secondary" style="">Phone Number</label>
+<input class="bg-surface-container-high border-none border-b-2 border-outline-variant px-4 py-3 text-on-surface focus:ring-0 focus:border-primary transition-colors" placeholder="+91 XXXXX XXXXX" type="tel"/>
+</div>
+<div class="flex flex-col gap-2 relative">
+<label class="text-[0.6875rem] uppercase tracking-[0.05em] font-bold text-secondary" style="">Email Address</label>
+<div class="flex gap-2">
+<input class="flex-grow bg-surface-container-high border-none border-b-2 border-outline-variant px-4 py-3 text-on-surface focus:ring-0 focus:border-primary transition-colors" placeholder="j.doe@startup.com" type="email"/>
+<button class="bg-primary text-on-primary px-4 py-2 text-[0.75rem] font-bold uppercase tracking-wider rounded-md hover:bg-primary-container transition-all active:scale-95" style="">Get OTP</button>
+</div>
+<div class="mt-4 p-4 bg-surface-container rounded-lg flex flex-col gap-3">
+<span class="text-[0.625rem] font-bold text-secondary-fixed-dim uppercase" style="">Verify Identity</span>
+<div class="flex gap-2">
+<input class="w-10 h-12 bg-surface-container-lowest text-center font-bold border-b-2 border-primary focus:ring-0" maxlength="1" type="text"/>
+<input class="w-10 h-12 bg-surface-container-lowest text-center font-bold border-b-2 border-primary focus:ring-0" maxlength="1" type="text"/>
+<input class="w-10 h-12 bg-surface-container-lowest text-center font-bold border-b-2 border-primary focus:ring-0" maxlength="1" type="text"/>
+<input class="w-10 h-12 bg-surface-container-lowest text-center font-bold border-b-2 border-primary focus:ring-0" maxlength="1" type="text"/>
+<input class="w-10 h-12 bg-surface-container-lowest text-center font-bold border-b-2 border-primary focus:ring-0" maxlength="1" type="text"/>
+<input class="w-10 h-12 bg-surface-container-lowest text-center font-bold border-b-2 border-primary focus:ring-0" maxlength="1" type="text"/>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-[0.6875rem] uppercase tracking-[0.05em] font-bold text-secondary" style="">Gender</label>
+<select class="bg-surface-container-high border-none border-b-2 border-outline-variant px-4 py-3 text-on-surface focus:ring-0 focus:border-primary transition-colors appearance-none">
+<option>Select Identity</option>
+<option>Male</option>
+<option>Female</option>
+<option>Non-binary</option>
+<option>Prefer not to say</option>
+</select>
+</div>
+</div>
+</section>
+<!-- Section 2: Startup Entity Details (Replaced Location) -->
+<section class="flex flex-col gap-8">
+<div class="flex items-center gap-4">
+<span class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary font-bold text-sm" style="">02</span>
+<h2 class="text-title-lg font-bold text-on-surface" style="">Startup Details</h2>
+</div>
+<div class="bg-surface-container-low p-8 rounded-xl">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="md:col-span-2 flex flex-col gap-2">
+<label class="text-[0.6875rem] uppercase tracking-[0.05em] font-bold text-secondary" style="">Startup Name</label>
+<input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant px-4 py-3 text-on-surface focus:ring-0 focus:border-primary transition-colors" placeholder="Innovative Defense Systems LLC" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-[0.6875rem] uppercase tracking-[0.05em] font-bold text-secondary" style="">Office State</label>
+<input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant px-4 py-3 text-on-surface focus:ring-0 focus:border-primary transition-colors" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-[0.6875rem] uppercase tracking-[0.05em] font-bold text-secondary" style="">Office District</label>
+<input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant px-4 py-3 text-on-surface focus:ring-0 focus:border-primary transition-colors" type="text"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Team Details -->
+<section class="flex flex-col gap-8">
+<div class="flex items-center gap-4">
+<span class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary font-bold text-sm" style="">03</span>
+<h2 class="text-title-lg font-bold text-on-surface" style="">Team Details</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="md:col-span-2 flex flex-col gap-2">
+<label class="text-[0.6875rem] uppercase tracking-[0.05em] font-bold text-secondary" style="">Team Name</label>
+<input class="bg-surface-container-high border-none border-b-2 border-outline-variant px-4 py-3 text-on-surface focus:ring-0 focus:border-primary transition-colors" placeholder="Cyber Sentinels" type="text"/>
+</div>
+<div class="md:col-span-1 flex flex-col gap-2">
+<label class="text-[0.6875rem] uppercase tracking-[0.05em] font-bold text-secondary" style="">Leader Name</label>
+<input class="bg-surface-container p-3 text-outline font-medium cursor-not-allowed" readonly="" type="text" value="Johnathan Doe"/>
+</div>
+<div class="md:col-span-1 flex flex-col gap-2">
+<label class="text-[0.6875rem] uppercase tracking-[0.05em] font-bold text-secondary" style="">Team Size</label>
+<select class="bg-surface-container-high border-none border-b-2 border-outline-variant px-4 py-3 text-on-surface focus:ring-0 focus:border-primary transition-colors">
+<option>2</option>
+<option selected="">3</option>
+<option>4</option>
+<option>5</option>
+</select>
+</div>
+</div>
+</section>
+<!-- Section 4: Active Personnel -->
+<section class="flex flex-col gap-6">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<span class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary font-bold text-sm" style="">04</span>
+<h2 class="text-title-lg font-bold text-on-surface" style="">Member Details</h2>
+</div>
+<span class="px-3 py-1 bg-secondary-fixed text-on-secondary-fixed text-[0.6875rem] font-bold rounded-sm uppercase" style="">2 Members Pending</span>
+</div>
+<div class="flex flex-col gap-6">
+<!-- Member Card 02 -->
+<div class="p-8 bg-surface-container rounded-lg border-l-4 border-primary flex flex-col gap-6 w-full">
+<div class="flex justify-between items-center">
+<span class="text-[0.75rem] font-bold text-primary uppercase tracking-wider" style="">Member 02</span>
+<span class="material-symbols-outlined text-outline cursor-pointer hover:text-error transition-colors" data-icon="close" style="">close</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="flex flex-col gap-2 md:col-span-1">
+<label class="text-[0.625rem] font-bold text-secondary uppercase" style="">Member Name</label>
+<input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant px-3 py-3 text-sm focus:ring-0 focus:border-primary transition-colors" placeholder="Full Name" type="text"/>
+</div>
+<div class="flex flex-col gap-2 md:col-span-1">
+<label class="text-[0.625rem] font-bold text-secondary uppercase" style="">Member Email ID</label>
+<input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant px-3 py-3 text-sm focus:ring-0 focus:border-primary transition-colors" placeholder="email@college.edu" type="email"/>
+</div>
+<div class="flex flex-col gap-2 md:col-span-1">
+<label class="text-[0.625rem] font-bold text-secondary uppercase" style="">Phone Number</label>
+<input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant px-3 py-3 text-sm focus:ring-0 focus:border-primary transition-colors" placeholder="+91 XXXXX XXXXX" type="tel"/>
+</div>
+<div class="flex flex-col gap-2 md:col-span-1">
+<label class="text-[0.625rem] font-bold text-secondary uppercase" style="">Gender</label>
+<select class="bg-surface-container-lowest border-none border-b-2 border-outline-variant px-3 py-3 text-sm focus:ring-0 focus:border-primary transition-colors appearance-none">
+<option value="">Select Gender</option>
+<option value="male">Male</option>
+<option value="female">Female</option>
+<option value="other">Other</option>
+</select>
+</div>
+<div class="flex flex-col gap-2 md:col-span-2">
+<label class="text-[0.625rem] font-bold text-secondary uppercase" style="">Startup Name</label>
+<input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant px-3 py-3 text-sm focus:ring-0 focus:border-primary transition-colors" placeholder="Startup Entity Name" type="text"/>
+</div>
+</div>
+</div>
+<!-- Member Card 03 -->
+<div class="p-8 bg-surface-container rounded-lg border-l-4 border-primary flex flex-col gap-6 w-full">
+<div class="flex justify-between items-center">
+<span class="text-[0.75rem] font-bold text-primary uppercase tracking-wider" style="">Member 03</span>
+<span class="material-symbols-outlined text-outline cursor-pointer hover:text-error transition-colors" data-icon="close" style="">close</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="flex flex-col gap-2 md:col-span-1">
+<label class="text-[0.625rem] font-bold text-secondary uppercase" style="">Member Name</label>
+<input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant px-3 py-3 text-sm focus:ring-0 focus:border-primary transition-colors" placeholder="Full Name" type="text"/>
+</div>
+<div class="flex flex-col gap-2 md:col-span-1">
+<label class="text-[0.625rem] font-bold text-secondary uppercase" style="">Member Email ID</label>
+<input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant px-3 py-3 text-sm focus:ring-0 focus:border-primary transition-colors" placeholder="email@college.edu" type="email"/>
+</div>
+<div class="flex flex-col gap-2 md:col-span-1">
+<label class="text-[0.625rem] font-bold text-secondary uppercase" style="">Phone Number</label>
+<input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant px-3 py-3 text-sm focus:ring-0 focus:border-primary transition-colors" placeholder="+91 XXXXX XXXXX" type="tel"/>
+</div>
+<div class="flex flex-col gap-2 md:col-span-1">
+<label class="text-[0.625rem] font-bold text-secondary uppercase" style="">Gender</label>
+<select class="bg-surface-container-lowest border-none border-b-2 border-outline-variant px-3 py-3 text-sm focus:ring-0 focus:border-primary transition-colors appearance-none">
+<option value="">Select Gender</option>
+<option value="male">Male</option>
+<option value="female">Female</option>
+<option value="other">Other</option>
+</select>
+</div>
+<div class="flex flex-col gap-2 md:col-span-2">
+<label class="text-[0.625rem] font-bold text-secondary uppercase" style="">Startup Name</label>
+<input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant px-3 py-3 text-sm focus:ring-0 focus:border-primary transition-colors" placeholder="Startup Entity Name" type="text"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Submission Action -->
+<div class="pt-10 flex flex-col items-center gap-6 border-t border-outline-variant/10">
+<div class="flex items-center gap-3">
+<input class="w-5 h-5 rounded border-outline text-primary focus:ring-primary" id="terms" type="checkbox"/>
+<label class="text-body-sm text-on-surface-variant" for="terms" style="">I certify that all provided intelligence is accurate and comply with the Hackathon Guidelines.</label>
+</div>
+<button class="w-full md:w-auto px-12 py-4 bg-primary text-on-primary text-label-md font-bold uppercase tracking-[0.1em] rounded shadow-lg hover:bg-primary-container active:scale-[0.98] transition-all" style="">
+                    Finalize Registration
+                </button>
+<p class="text-[0.625rem] text-outline font-medium uppercase tracking-widest" style=""><br/></p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#eceeed] dark:bg-[#121414] w-full">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-10 gap-6 w-full max-w-screen-2xl mx-auto">
+<div class="text-sm font-black text-[#006193]" style="">DEFENSE HACKATHON 2026</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-[#546344] dark:text-[#a0af90] font-['Public_Sans'] text-[0.6875rem] uppercase tracking-[0.05em] font-bold hover:text-[#006193] transition-colors opacity-100" href="#" style="">Privacy Protocol</a>
+<a class="text-[#546344] dark:text-[#a0af90] font-['Public_Sans'] text-[0.6875rem] uppercase tracking-[0.05em] font-bold hover:text-[#006193] transition-colors opacity-100" href="#" style="">Operational Terms</a>
+<a class="text-[#546344] dark:text-[#a0af90] font-['Public_Sans'] text-[0.6875rem] uppercase tracking-[0.05em] font-bold hover:text-[#006193] transition-colors opacity-100" href="#" style="">Track Guidelines</a>
+<a class="text-[#546344] dark:text-[#a0af90] font-['Public_Sans'] text-[0.6875rem] uppercase tracking-[0.05em] font-bold hover:text-[#006193] transition-colors opacity-100" href="#" style="">Intelligence Support</a>
+</div>
+<div class="text-[#546344] dark:text-[#a0af90] font-['Public_Sans'] text-[0.6875rem] uppercase tracking-[0.05em] font-bold text-center md:text-right" style="">
+            © 2024 DEFENSE INNOVATION COMMAND. OFFICIAL PORTAL.
+        </div>
+</div>
+</footer>
+</body></html>

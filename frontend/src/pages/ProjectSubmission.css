@@ -1,0 +1,131 @@
+.ps-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.ps-section {
+  background: #fff;
+  border: 1px solid #D1D9E6;
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+}
+.ps-section h3 {
+  font-family: 'Public Sans';
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0A2472;
+  margin-bottom: 0.25rem;
+}
+.ps-section-desc {
+  font-family: 'Inter';
+  font-size: 0.875rem;
+  color: var(--on-surface-variant);
+  margin-bottom: 1.5rem;
+}
+.ps-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.ps-upload-box {
+  background: var(--surface-container-lowest);
+  border: 1px dashed var(--outline-variant);
+  border-radius: var(--radius-md);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  transition: all 0.2s;
+}
+.ps-upload-box:hover {
+  border-color: #2196F3;
+  background: rgba(33, 150, 243, 0.03);
+}
+.ps-label {
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: var(--on-surface);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 0.5rem;
+}
+.ps-hint {
+  font-size: 0.75rem;
+  color: var(--outline);
+  margin-bottom: 1rem;
+}
+.ps-file-input {
+  width: 100%;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+.ps-text-input {
+  width: 100%;
+  background: #fff;
+  border: 1px solid var(--outline-variant);
+  padding: 0.75rem;
+  border-radius: var(--radius-xs);
+  font-size: 0.875rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.ps-text-input:focus {
+  border-color: #2196F3;
+}
+.ps-field {
+  display: flex;
+  flex-direction: column;
+}
+.ps-textarea {
+  width: 100%;
+  background: var(--surface-container-lowest);
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  font-size: 0.875rem;
+  font-family: inherit;
+  color: var(--on-surface);
+  outline: none;
+  resize: vertical;
+  transition: border-color 0.2s;
+}
+.ps-textarea:focus {
+  border-color: #2196F3;
+}
+.ps-submit-row {
+  display: flex;
+  justify-content: flex-end;
+}
+.ps-submit-btn {
+  background: #0A2472;
+  color: #fff;
+  padding: 1rem 2.5rem;
+  border-radius: var(--radius-md);
+  font-family: 'Inter';
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 4px 12px rgba(10,36,114,0.2);
+}
+.ps-submit-btn:hover {
+  background: #06174D;
+}
+.ps-submit-btn:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+  .ps-grid-3 {
+    grid-template-columns: 1fr;
+  }
+}

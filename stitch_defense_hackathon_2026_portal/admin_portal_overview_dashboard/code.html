@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AeroDef HQ | Admin Command Center</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-container": "#d4dcff",
+                    "on-primary-fixed-variant": "#003dab",
+                    "inverse-on-surface": "#f0f0fb",
+                    "surface-dim": "#d9d9e4",
+                    "surface-container-low": "#f3f3fe",
+                    "secondary-fixed-dim": "#89ceff",
+                    "on-primary-fixed": "#00174d",
+                    "outline-variant": "#c3c5d7",
+                    "on-tertiary-container": "#cfdef6",
+                    "tertiary-fixed-dim": "#b9c7df",
+                    "inverse-primary": "#b5c4ff",
+                    "inverse-surface": "#2e3039",
+                    "surface-container-high": "#e7e7f3",
+                    "on-background": "#191b23",
+                    "background": "#faf8ff",
+                    "on-primary": "#ffffff",
+                    "secondary": "#006591",
+                    "on-tertiary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "primary-fixed": "#dbe1ff",
+                    "on-error-container": "#93000a",
+                    "primary-container": "#1a56db",
+                    "on-tertiary-fixed": "#0d1c2e",
+                    "on-secondary-container": "#004666",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-fixed-variant": "#004c6e",
+                    "on-surface-variant": "#434654",
+                    "surface-tint": "#1353d8",
+                    "tertiary": "#3c4a5e",
+                    "surface-container": "#ededf8",
+                    "on-surface": "#191b23",
+                    "tertiary-container": "#546277",
+                    "secondary-container": "#39b8fd",
+                    "surface-bright": "#faf8ff",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-fixed": "#d5e3fc",
+                    "surface-container-highest": "#e2e1ed",
+                    "on-secondary-fixed": "#001e2f",
+                    "error-container": "#ffdad6",
+                    "primary-fixed-dim": "#b5c4ff",
+                    "primary": "#003fb1",
+                    "outline": "#737686",
+                    "surface": "#faf8ff",
+                    "secondary-fixed": "#c9e6ff",
+                    "on-error": "#ffffff",
+                    "surface-variant": "#e2e1ed",
+                    "on-tertiary-fixed-variant": "#3a485b"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-headline { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#faf8ff]/80 backdrop-blur-md flex justify-between items-center px-12 h-20">
+<div class="text-xl font-black tracking-tighter text-blue-800 font-headline">AeroDef HQ</div>
+<div class="hidden md:flex items-center gap-8 font-headline font-bold tracking-tight">
+<a class="text-slate-600 hover:text-blue-800 transition-colors" href="#">Home</a>
+<a class="text-slate-600 hover:text-blue-800 transition-colors" href="#">Problem Statements</a>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2 rounded-lg font-bold">Login</button>
+</div>
+</nav>
+<!-- SideNavBar -->
+<aside class="fixed left-0 top-0 pt-24 pb-8 px-4 flex flex-col gap-2 h-screen w-72 bg-surface-container-low font-body text-sm font-medium">
+<div class="px-4 mb-6">
+<h2 class="text-lg font-bold font-headline text-blue-900">Command Center</h2>
+<p class="text-slate-500 text-xs">Protocol Active</p>
+</div>
+<nav class="flex flex-col gap-1">
+<a class="flex items-center gap-3 px-4 py-3 bg-surface-container-lowest text-blue-700 font-bold rounded-lg shadow-sm" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span>Overview</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:bg-surface-container-highest hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="description">description</span>
+<span>Submission Details</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:bg-surface-container-highest hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="group">group</span>
+<span>Team Comms</span>
+</a>
+</nav>
+<div class="mt-auto px-4">
+<button class="w-full py-4 bg-primary text-on-primary font-bold rounded-xl flex items-center justify-center gap-2 scale-95 active:scale-90 duration-150">
+<span class="material-symbols-outlined" data-icon="send">send</span>
+                Deploy Project
+            </button>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="ml-72 pt-28 px-12 pb-16">
+<!-- Header Section -->
+<header class="mb-12">
+<div class="flex justify-between items-end">
+<div class="max-w-2xl">
+<span class="text-[0.75rem] font-bold tracking-[0.1em] text-secondary uppercase font-label">Administrative Control</span>
+<h1 class="text-[3.5rem] font-extrabold font-headline leading-tight tracking-tighter text-on-surface mt-2">Registrar Database.</h1>
+</div>
+<div class="flex gap-4 pb-2">
+<button class="flex items-center gap-2 px-6 py-3 bg-surface-container-highest text-primary font-bold rounded-lg hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-xl" data-icon="download">download</span>
+                        Export to CSV
+                    </button>
+</div>
+</div>
+</header>
+<!-- KPI Cards: Redesigned Bento Grid -->
+<section class="grid grid-cols-12 gap-6 mb-12">
+<!-- Total Registrations Card -->
+<div class="col-span-12 md:col-span-6 bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-8 shadow-sm">
+<div class="flex justify-between items-start mb-6">
+<div>
+<h3 class="text-slate-500 font-label text-xs tracking-widest uppercase font-bold mb-1">Total Registrations</h3>
+<p class="text-5xl font-black font-headline text-on-surface">1,402</p>
+</div>
+<div class="p-3 bg-primary/5 rounded-xl text-primary">
+<span class="material-symbols-outlined text-3xl" data-icon="group_add">group_add</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 pt-6 border-t border-surface-container">
+<div>
+<p class="text-xs text-slate-500 uppercase font-bold tracking-wider mb-1">Students</p>
+<p class="text-2xl font-bold font-headline text-blue-800">894</p>
+</div>
+<div>
+<p class="text-xs text-slate-500 uppercase font-bold tracking-wider mb-1">Startups</p>
+<p class="text-2xl font-bold font-headline text-blue-800">508</p>
+</div>
+</div>
+</div>
+<!-- Revenue Collected Card -->
+<div class="col-span-12 md:col-span-6 bg-primary-container rounded-2xl p-8 shadow-md">
+<div class="flex justify-between items-start mb-6">
+<div>
+<h3 class="text-on-primary-container/70 font-label text-xs tracking-widest uppercase font-bold mb-1">Revenue Collected</h3>
+<p class="text-5xl font-black font-headline text-on-primary">$42,900.00</p>
+</div>
+<div class="p-3 bg-on-primary/10 rounded-xl text-on-primary">
+<span class="material-symbols-outlined text-3xl" data-icon="payments">payments</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 pt-6 border-t border-on-primary/10">
+<div>
+<p class="text-xs text-on-primary-container/60 uppercase font-bold tracking-wider mb-1">Student Fees</p>
+<p class="text-2xl font-bold font-headline text-on-primary">$17,500.00</p>
+</div>
+<div>
+<p class="text-xs text-on-primary-container/60 uppercase font-bold tracking-wider mb-1">Startup Fees</p>
+<p class="text-2xl font-bold font-headline text-on-primary">$25,400.00</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Registrar Database Table -->
+<section class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm border border-outline-variant/20">
+<div class="px-8 py-6 flex justify-between items-center bg-surface-container-low/50">
+<h2 class="text-xl font-bold font-headline text-blue-900">Active Deployments</h2>
+<div class="flex gap-4">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-lg" data-icon="search">search</span>
+<input class="bg-surface border-none focus:ring-2 focus:ring-primary/20 rounded-lg pl-10 pr-4 py-2 text-sm w-64" placeholder="Filter team..." type="text"/>
+</div>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low/30 text-[0.7rem] uppercase tracking-widest font-bold text-slate-500">
+<th class="px-8 py-4">Team ID</th>
+<th class="px-8 py-4">Team Name</th>
+<th class="px-8 py-4">Category</th>
+<th class="px-8 py-4">Status</th>
+<th class="px-8 py-4 text-right">Action</th>
+</tr>
+</thead>
+<tbody class="text-sm divide-y divide-surface-container">
+<!-- Table Row 1 -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="px-8 py-5 font-mono text-primary font-semibold">AD-2024-001</td>
+<td class="px-8 py-5 font-bold text-on-surface">Vanguard Aerospace</td>
+<td class="px-8 py-5">
+<span class="bg-secondary-container/20 text-secondary px-3 py-1 rounded-full text-[0.65rem] font-bold uppercase tracking-wider">Unmanned Systems</span>
+</td>
+<td class="px-8 py-5">
+<div class="flex items-center gap-2 text-green-600 font-semibold">
+<span class="w-2 h-2 rounded-full bg-green-500"></span>
+                                    Confirmed
+                                </div>
+</td>
+<td class="px-8 py-5 text-right">
+<button class="text-slate-400 hover:text-primary group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined" data-icon="more_vert">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Table Row 2 -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="px-8 py-5 font-mono text-primary font-semibold">AD-2024-042</td>
+<td class="px-8 py-5 font-bold text-on-surface">Cortex AI Defense</td>
+<td class="px-8 py-5">
+<span class="bg-primary-fixed text-primary px-3 py-1 rounded-full text-[0.65rem] font-bold uppercase tracking-wider">Cyber Intelligence</span>
+</td>
+<td class="px-8 py-5">
+<div class="flex items-center gap-2 text-amber-600 font-semibold">
+<span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+                                    Pending
+                                </div>
+</td>
+<td class="px-8 py-5 text-right">
+<button class="text-slate-400 hover:text-primary group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined" data-icon="more_vert">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Table Row 3 -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="px-8 py-5 font-mono text-primary font-semibold">AD-2024-118</td>
+<td class="px-8 py-5 font-bold text-on-surface">Ironclad Structures</td>
+<td class="px-8 py-5">
+<span class="bg-tertiary-fixed text-tertiary px-3 py-1 rounded-full text-[0.65rem] font-bold uppercase tracking-wider">Material Science</span>
+</td>
+<td class="px-8 py-5">
+<div class="flex items-center gap-2 text-green-600 font-semibold">
+<span class="w-2 h-2 rounded-full bg-green-500"></span>
+                                    Confirmed
+                                </div>
+</td>
+<td class="px-8 py-5 text-right">
+<button class="text-slate-400 hover:text-primary group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined" data-icon="more_vert">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Table Row 4 -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="px-8 py-5 font-mono text-primary font-semibold">AD-2024-502</td>
+<td class="px-8 py-5 font-bold text-on-surface">Silent Shadow</td>
+<td class="px-8 py-5">
+<span class="bg-secondary-container/20 text-secondary px-3 py-1 rounded-full text-[0.65rem] font-bold uppercase tracking-wider">Stealth Tech</span>
+</td>
+<td class="px-8 py-5">
+<div class="flex items-center gap-2 text-green-600 font-semibold">
+<span class="w-2 h-2 rounded-full bg-green-500"></span>
+                                    Confirmed
+                                </div>
+</td>
+<td class="px-8 py-5 text-right">
+<button class="text-slate-400 hover:text-primary group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined" data-icon="more_vert">more_vert</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="px-8 py-4 bg-surface-container-low flex justify-between items-center text-xs text-slate-500 font-medium">
+<span>Showing 1-4 of 1,402 teams</span>
+<div class="flex gap-2">
+<button class="w-8 h-8 flex items-center justify-center rounded border border-outline-variant hover:bg-surface transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="chevron_left">chevron_left</span>
+</button>
+<button class="w-8 h-8 flex items-center justify-center rounded bg-primary text-on-primary font-bold">1</button>
+<button class="w-8 h-8 flex items-center justify-center rounded border border-outline-variant hover:bg-surface transition-colors">2</button>
+<button class="w-8 h-8 flex items-center justify-center rounded border border-outline-variant hover:bg-surface transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 bg-[#ededf8] flex flex-col items-center justify-center gap-6 text-center">
+<p class="font-body text-xs tracking-wide uppercase text-blue-800 font-bold">© 2024 Sovereign Blueprint Defense. Built for Strategic Excellence.</p>
+<div class="flex gap-8">
+<a class="font-body text-xs tracking-wide uppercase text-slate-500 hover:text-blue-700 underline underline-offset-4" href="#">Security Protocol</a>
+<a class="font-body text-xs tracking-wide uppercase text-slate-500 hover:text-blue-700 underline underline-offset-4" href="#">Operational Terms</a>
+<a class="font-body text-xs tracking-wide uppercase text-slate-500 hover:text-blue-700 underline underline-offset-4" href="#">Contact Support</a>
+</div>
+</footer>
+</body></html>
